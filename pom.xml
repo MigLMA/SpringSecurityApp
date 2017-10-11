@@ -22,15 +22,31 @@
     		<groupId>javax.servlet</groupId>
     		<artifactId>jstl</artifactId>
 		</dependency>
+<!-- tag::security[] -->
        	<dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
+<!-- end::security[] -->
+<!-- tag::web[] -->
         <dependency>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-web</artifactId>
-    </dependency>
+	        <groupId>org.springframework.boot</groupId>
+	        <artifactId>spring-boot-starter-web</artifactId>
+	    </dependency>
+<!-- end::web[] -->
+<!-- JDBC -->      
+        <dependency>
+		    <groupId>org.springframework</groupId>
+		    <artifactId>spring-jdbc</artifactId>
+		    <version>5.0.0.RELEASE</version>
+		</dependency>
+<!-- MySQL -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
     </dependencies>
+
 
     <properties>
         <java.version>1.8</java.version>
